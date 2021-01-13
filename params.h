@@ -10,16 +10,16 @@
 
 #ifdef NTRUHPS2048509
 #define NTRU_N_PWR2 512			// Multiple of 32
-#define PADDING 3
+#define PADDING 3				
 #define K NTRU_N_PWR2			// Multiple of 16
-#define NTRU_N NTRU_N_PWR2 - PADDING
+#define NTRU_N NTRU_N_PWR2 - PADDING	// 512 - 3 = 509
 #endif
 
 #ifdef NTRUHPS2048677
 #define NTRU_N_PWR2 704			// Multiple of 32
 #define PADDING 27
 #define K NTRU_N_PWR2			// Multiple of 16
-#define NTRU_N NTRU_N_PWR2 - PADDING
+#define NTRU_N NTRU_N_PWR2 - PADDING	// 704 - 27 = 677
 #endif
 
 #define WMMA_THREAD NTRU_N_PWR2
