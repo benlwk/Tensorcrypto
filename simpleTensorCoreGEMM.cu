@@ -3,7 +3,7 @@
 #include <mma.h>
 #include <stdlib.h> 
 #include <time.h>  
-#include "test_vector.h"
+#include "params.h"
 using namespace nvcuda;
 
 #define MODQ(X) ((X) & (NTRU_Q-1))
