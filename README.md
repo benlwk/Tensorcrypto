@@ -3,7 +3,7 @@ This is the code accompanying the paper "TensorCrypto".
 https://eprint.iacr.org/2021/173
 
 # Introduction
-The tensor cores in NVIDIA GPU are exploited to perform polynomial convolution/matrix multiplication found in several lattice-based cryptosystems. In this paper, we demonsrate three successful cases: TensorTRU (NTRU), TensorLAC (LAC) and TensorFro (Frodo). It can benefit other similar lattice-based schemes that cannot be accelerated by NTT. This repository contains source codes for implementing polynomial convolution in NTRUHPS2048509 and NTRUHPS2048677. The technique can be extended to implement LAC and variants of FrodoKEM as well.
+The tensor cores in NVIDIA GPU are exploited to perform polynomial convolution/matrix multiplication found in several lattice-based cryptosystems. In this paper, we demonsrate three successful cases: TensorTRU (NTRU), TensorLAC (LAC) and TensorFro (Frodo). It can benefit other similar lattice-based schemes that cannot be accelerated by NTT. This repository also contain source codes for implementing two parameter sets of NTRU public-key encryption, using the proposed tensor-core-based polynomial convolution. 
 
 # How to use
 There is a Makefile accompanied with the source codes in each separate folder. You can build the executable by typing "make".
