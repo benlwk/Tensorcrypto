@@ -13,9 +13,11 @@ Note that you need to change the sm version in GPU to suit your device. The defa
 1) The NTRU public-key encryption (see NTRU-GPU-509 and NTRU-GPU-677) is implemented using ordinary GPU cores and tensor cores. You can select them by passing 0 or 1 to the executable. 
 
 For instance, this executes NTRU with ordinary GPU cores: 
-$ ./runtest -m 0 
+
+\\$ ./runtest -m 0 
 This executes NTRU with ordinary tensor cores: 
-$ ./runtest -m 1
+
+\\$ ./runtest -m 1
 
 3) The folder TensorTRU contains only the polynomial convolution with NTRU parameter sets. The flag NTRUHPS2048509 and NTRUHPS2048677 are used to select the respective NTRU parameter sets. You may also comment out the ENCRYPT flag for NTRU decryption. The flag K determines how many times we reuse the same public/private key pair. This allows a flexible configuration to cater for ephemeral key pair usage. The flag WMMA_THREAD determines how many threads per block for the tensor core. It can be set as any multiple of 32.
 4) Similarly, the folders TensorLAC and TensorFro contains the code for executing polynomial convolution with different LAC and FrodoKEM parameter sets.
