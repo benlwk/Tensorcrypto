@@ -15,7 +15,7 @@ Note that you need to change the sm version in GPU to suit your device. The defa
 For instance, this executes NTRU with ordinary GPU cores: 
 
 \$ ./runtest -m 0 
-This executes NTRU with ordinary tensor cores: 
+\This executes NTRU with ordinary tensor cores: 
 
 \$ ./runtest -m 1
 
