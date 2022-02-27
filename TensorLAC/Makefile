@@ -26,7 +26,7 @@
 
 
 all: TensorLAC.cu
- 	nvcc -o TensorLAC -arch=sm_75 TensorLAC.cu
+	nvcc -o TensorLAC -arch=sm_75 TensorLAC.cu
 
 clean:
 	rm -f TensorLAC
